@@ -75,6 +75,19 @@ body {
 }
 
 
+/* Skills Section */
+
+#skills-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.skills-section-content {
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+}
 
 
 /* Project Section */
