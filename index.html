@@ -28,9 +28,9 @@
     <!-- NAVBAR -->
     <div class="navbar">
       <a class="nav-title-link" href="./index.html">
-        <!-- TODO - Change the "Portfolio Title" to whatever you want displayed in the top left -->
+        
         <span class="nav-title">Hi, hello!</span>
-         <!-- TODO - Change the email after 'mailto:' to your email address for contact -->
+        
         <a class="button" href="mailto:mikabala2003@gmail.com">
           <span class="button-text">Contact Me</span>
         </a>
@@ -43,23 +43,9 @@
       <!-- PORTFOLIO HEADER -->
       <div id="portfolio-header">
         <div id="portfolio-header-image-container">
-          <!-- 
-            TODO
-
-            - Change the img "src" attribute to point to the Unemployable image you uploaded (or whatever image).
-            - Change the number to point to your Unemployable & replace the OpenSea link with your own
-            - If you aren't using an Unemployable as your image, remove the entire "a" element
-          -->
           <img src="./assets/images/profile.png" class="portfolio-header-image">
         </div>
 
-          <!-- 
-            TODO
-
-            - Change the main-title to whatver you want
-            - Change the body-text after that to a quick introduction to what you do
-            - Edit the button text if you feel like it. It will link to the projects section below.
-          -->
         <div id="portfolio-header-text-container">
             <div class="header-text">
               <span class="main-title">Hey, I'm Mikołaj.</span>
@@ -73,12 +59,6 @@
       </div>
 
       <!-- ABOUT SECTION -->
-      <!-- 
-        TODO
-
-        - Change the subheader-text to whatever header you want
-        - Add paragraphs using the <div class="body-text"></div> elements in the "about-section-content"
-      -->
       <div id="about-section">
         <span class="subheader-text">About Me</span>
         <div class="about-section-content">
@@ -86,39 +66,40 @@
           <div class="body-text">I recently graduated with a Bachelor's degree in Computer Science from Gdańsk University of Technology. During my studies, I participated in the Erasmus program and actively engaged in student life, including involvement in student organizations. Currently, I am focusing on developing my skills in data science by working on personal projects and completing online courses.</div>
         </div>
       </div>
+      
+      <!-- SKILLS -->
+      <div id="skills-section">
+        <span class="subheader-text">Skills</span>
+        <div class="skills-section-content">
+  
+          <div class="body-text">
+            <strong>Programming:</strong> Python, SQL, C/C++, Java, C# (Unity)
+          </div>
+
+          <div class="body-text">
+            <strong>Data Science & Analytics:</strong> Data analysis, data interpretation, NumPy, Pandas, Matplotlib, Seaborn, Power BI
+          </div>
+
+          <div class="body-text">
+            <strong>Tools & Systems:</strong> Git, GitHub, Jupyter Notebook, Windows, Linux
+          </div>
+
+          <div class="body-text">
+            <strong>Soft Skills:</strong> Analytical thinking, problem solving, teamwork, adaptability, strong motivation
+          </div>
+
+        </div>
+      </div>
 
       <!-- PROJECTS / MY WORK SECTION -->
       <div id="my-work-section">
-        <!-- TODO - Change the subheader-text to whatever you want the Projects section header to say -->
-        <span class="subheader-text">My Projects</span>
+        <span class="subheader-text">My Work</span>
 
         <div class="projects-container">
-          <!-- 
-            TODO
-
-            This is where the project cards live. Here's a base level project card for you to copy:
-            <div class="project-card">
-              <img src="./assets/images/IMAGE_NAME" class="project-image">
-              <div class="project-card-text-container">
-                <div class="subheader-text project-title">PROJECT_NAME</div>
-                <div class="body-text project-card-text">SMALL_PROJECT_DESCRIPTION</div>
-              </div>
-              <a class="button" href="./project-pages/PROJECT_PAGE_NAME.html">
-                <span class="button-text">Read More</span>
-                <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
-              </a>
-            </div>
-
-            - To add a project to the this area, copy the above, paste it below this comment, and change the following:
-                - IMAGE_NAME: the name of the image file in assets/images
-                - PROJECT_NAME: the name of the project (keep it short, it only shows 1 line)
-                - SMALL_PROJECT_DESCRIPTION: a quick project description (max 4 lines)
-                - PROJECT_PAGE_NAME.html: the html filename for the project (must be in project-pages folder)
-          -->
           
           <!-- Qwirle -->
           <div class="project-card">
-            <img src="./assets/images/qwirkle.png" class="project-image">
+            <img src="./assets/images/qwirkle/qwirkle.png" class="project-image">
             <div class="project-card-text-container">
               <div class="subheader-text project-title">Qwirkle</div>
               <div class="body-text project-card-text">Implementation of the board game Quirkle in the Unity environment</div>
@@ -129,9 +110,35 @@
             </a>
           </div>
 
+          <!-- Shelfmate -->
+          <div class="project-card">
+            <img src="./assets/images/Shelfmate/ShelfmateHome.jpg" class="project-image">
+            <div class="project-card-text-container">
+              <div class="subheader-text project-title">Shelfmate</div>
+              <div class="body-text project-card-text">A full-stack book review web application with user authentication, role-based access, and features such as book browsing, reviews, and personal reading lists.</div>
+            </div>
+            <a class="button" href="./project-pages/Shelfmate.html">
+              <span class="button-text">Read More</span>
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a>
+          </div>
+
+          <!-- FFMPEG -->
+          <div class="project-card">
+            <img src="./assets/images/FFMPEG/FFMPEG.jpg" class="project-image">
+            <div class="project-card-text-container">
+              <div class="subheader-text project-title">Graphical Interface for FFMPEG</div>
+              <div class="body-text project-card-text">A graphical user interface for FFMPEG that simplifies video and audio processing tasks such as conversion, trimming, and extraction.</div>
+            </div>
+            <a class="button" href="./project-pages/FFMPEG.html">
+              <span class="button-text">Read More</span>
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a>
+          </div>
+
           <!-- Cert Python -->
           <div class="project-card">
-            <img src="./assets/images/certPython.png" class="project-image">
+            <img src="./assets/images/cert/certPython.png" class="project-image">
             <div class="project-card-text-container">
               <div class="subheader-text project-title">Python</div>
               <div class="body-text project-card-text">Kaggle: Python Certificate</div>
@@ -144,7 +151,7 @@
 
           <!-- Cert Pandas -->
           <div class="project-card">
-            <img src="./assets/images/certPandas.png" class="project-image">
+            <img src="./assets/images/cert/certPandas.png" class="project-image">
             <div class="project-card-text-container">
               <div class="subheader-text project-title">Pandas</div>
               <div class="body-text project-card-text">Kaggle: Pandas Certificate</div>
@@ -157,7 +164,7 @@
           
           <!-- Cert Data Visualization -->
           <div class="project-card">
-            <img src="./assets/images/certDataVisualization.png" class="project-image">
+            <img src="./assets/images/cert/certDataVisualization.png" class="project-image">
             <div class="project-card-text-container">
               <div class="subheader-text project-title">Data Visualization</div>
               <div class="body-text project-card-text">Kaggle: Data Visualization Certificate</div>
@@ -167,92 +174,22 @@
               <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
             </a>
           </div>
-          <div class="project-card">
-            <img src="./assets/images/desktop.jpeg" class="project-image">
-            <div class="project-card-text-container">
-              <div class="subheader-text project-title">Project Name</div>
-              <div class="body-text project-card-text">Elit pellentesque habitant morbi tristique senectus et netus et. Elementum tempus egestas sed sed risus pretium quam. Nibh ipsum consequat nisl vel pretium</div>
-            </div>
-            <a class="button" href="./project-pages/project-template.html">
-              <span class="button-text">Read More</span>
-              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
-            </a>
-          </div>
-          
-          <div class="project-card">
-            <img src="./assets/images/code.jpeg" class="project-image">
-            <div class="project-card-text-container">
-              <div class="subheader-text project-title">Project Name</div>
-              <div class="body-text project-card-text">Elit pellentesque habitant morbi tristique senectus et netus et. Elementum tempus egestas sed sed risus pretium quam. Nibh ipsum consequat nisl vel pretium</div>
-            </div>
-            <a class="button" href="./project-pages/project-template.html">
-              <span class="button-text">Read More</span>
-              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
-            </a>
-          </div>
-          <div class="project-card">
-            <img src="./assets/images/sketchbook.jpeg" class="project-image">
-            <div class="project-card-text-container">
-              <div class="subheader-text project-title">Super Long Project Name That Should be Hidden</div>
-              <div class="body-text project-card-text">Elit pellentesque habitant morbi tristique senectus et netus et. Elementum tempus egestas sed sed risus pretium quam. Nibh ipsum consequat nisl vel pretium</div>
-            </div>
-            <a class="button" href="./project-pages/project-template.html">
-              <span class="button-text">Read More</span>
-              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
-            </a>
-          </div>
         </div>
       </div>
-
-        <!-- SKILLS -->
-        <div id="skills-section">
-          <span class="subheader-text">Skills</span>
-          <div class="skills-section-content">
-    
-            <div class="body-text">
-              <strong>Programming:</strong> Python, SQL, C/C++, Java, C# (Unity)
-            </div>
-
-            <div class="body-text">
-              <strong>Data Science & Analytics:</strong> Data analysis, data interpretation, NumPy, Pandas, Matplotlib, Seaborn, Power BI
-            </div>
-
-            <div class="body-text">
-              <strong>Tools & Systems:</strong> Git, GitHub, Jupyter Notebook, Windows, Linux
-            </div>
-
-            <div class="body-text">
-              <strong>Soft Skills:</strong> Analytical thinking, problem solving, teamwork, adaptability, strong motivation
-            </div>
-
-          </div>
-        </div>
     </div>
     
     
     <!-- FOOTER -->
     <div id="footer">
-      <!-- 
-        TODO - Change href to your Instagram account (can also delete entire "a" element if no Instagram) 
 
-        This should be the same across all pages.
-      -->
       <a class="icon-link" target="_blank" href="https://www.instagram.com/mikolaj.kabalaaa">
         <image src="./assets/icons/instagram.svg" class="footer-icon"/>
       </a>
-      <!-- 
-        TODO - Change href to your Twitter account (can also delete entire "a" element if no Twitter) 
-      
-        This should be the same across all pages.
-      -->
+
       <a class="icon-link" target="_blank" href="https://www.facebook.com/share/14WxhyULjJt/?mibextid=wwXIfr">
         <image src="./assets/icons/fb.svg" class="footer-icon"/>
       </a>
-      <!-- 
-        TODO - Change the email after "mailto" to your contact email 
-      
-        This should be the same across all pages.
-      -->
+
       <a class="icon-link" href="mailto:mikabala2003@gmail.com">
         <image src="./assets/icons/mail.svg" class="footer-icon"/>
       </a>
