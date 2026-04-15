@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+    <link rel="icon" href="../assets/images/profile.png" />
+    <title>Portfolio, Mikołaj Kabała</title>
+    <meta name="description" content="A portfolio.">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/typography.css">
+    <link rel="stylesheet" href="../css/utilities.css">
+
+		<script defer src="../js/script.js"></script>
+	</head>
+	<body>
+    <!-- NAVBAR -->
+    <div class="navbar">
+      <a class="nav-title-link" href="../index.html">
+
+        <span class="nav-title">Hi, hello!</span>
+
+        <a class="button" href="mailto:mikabala2003@gmail.com">
+          <span class="button-text">Contact Me</span>
+        </a>
+      </a>
+    </div>
+
+    <!-- MAIN PAGE CONTENT -->
+    <div id="main-content">
+
+      <!-- PROJECT HEADER -->
+      <div id="project-header">
+
+        <div class="main-title">Gravel Scraper</div>
+        <div class="body-text">A Python-based web scraping application designed to automatically collect gravel bike listings from multiple online stores, unify the data into a consistent format, and enable easy comparison of prices, specifications, and ratings using structured JSON output.</div>
+        <image class="project-header-image" src="../assets/images/gravels/4.png">
+      </div>
+
+      <!-- PROJECT DETAILS -->
+      <div id="project-details">
+        <div class="subheader-text">Background</div>
+        <div class="project-details-content">
+          
+            <div class="body-text">
+              The project was created out of a personal need to quickly compare gravel bike models available across different online stores without manually browsing multiple websites. The goal was to automate the data collection process and build a unified dataset that enables fast and efficient comparison of available offers.
+            </div>
+
+            <div class="body-text">
+              The application uses web scraping techniques to extract product data from two major online bike retailers: Centrum Rowerowe and Decathlon. The system automatically navigates through paginated listings, collects product details such as name, brand, price, rating, and URL, and stores the results in a structured JSON format for further analysis using pandas.
+            </div>
+            
+            <div class="body-text">
+              Currently, I am scraping data daily to collect a representative dataset for further analysis. I assume that a time period of 30–60 days of data collection will be sufficient.
+            </div>
+
+            <div class="body-text">
+              <strong>Technologies:</strong> Python, Selenium, BeautifulSoup, Pandas, JSON
+            </div>
+
+          <div class="body-text">
+            <a href="https://github.com/Mika2808/bike-store-scraper" target="_blank">
+              View on GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- IMAGE GALLERY -->
+      <div id="project-gallery">
+        <div class="subheader-text">Image Gallery</div>
+        <div class="project-gallery-content">
+            
+          <div class="gallery-image-container half-width">
+            <img src="../assets/images/gravels/1.png" class="gallery-image">
+            <span class="image-caption">Main.py file</span>
+          </div>
+
+          <div class="gallery-image-container half-width">
+              <img src="../assets/images/gravels/2.png" class="gallery-image">
+              <span class="image-caption">Web driver scraping from Centrum rowerowe</span>
+            </div>
+          
+          <div class="gallery-image-container half-width">
+            <img src="../assets/images/gravels/3.png" class="gallery-image">
+            <span class="image-caption">Web driver scraping from Decathlon</span>
+          </div>
+        
+            <div class="gallery-image-container half-width">
+            <img src="../assets/images/gravels/data.png" class="gallery-image">
+            <span class="image-caption">Folder with data in JSON files</span>
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div id="footer">
+
+      <a class="icon-link" target="_blank" href="https://www.instagram.com/mikolaj.kabalaaa">
+        <image src="../assets/icons/instagram.svg" class="footer-icon"/>
+      </a>
+
+      <a class="icon-link" target="_blank" href="https://www.facebook.com/share/14WxhyULjJt/?mibextid=wwXIfr">
+        <image src="../assets/icons/fb.svg" class="footer-icon"/>
+      </a>
+
+      <a class="icon-link" href="mailto:mikabala2003@gmail.com">
+        <image src="../assets/icons/mail.svg" class="footer-icon"/>
+      </a>
+    </div>
+
+	</body>
+</html>
