@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+    <link rel="icon" href="../assets/images/profile.png" />
+    <title>Portfolio, Mikołaj Kabała</title>
+    <meta name="description" content="A portfolio.">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/typography.css">
+    <link rel="stylesheet" href="../css/utilities.css">
+
+		<script defer src="../js/script.js"></script>
+	</head>
+	<body>
+    <!-- NAVBAR -->
+    <div class="navbar">
+      <a class="nav-title-link" href="../index.html">
+
+        <span class="nav-title">Hi, hello!</span>
+
+        <a class="button" href="mailto:mikabala2003@gmail.com">
+          <span class="button-text">Contact Me</span>
+        </a>
+      </a>
+    </div>
+
+    <!-- MAIN PAGE CONTENT -->
+    <div id="main-content">
+
+      <!-- PROJECT HEADER -->
+      <div id="project-header">
+
+        <div class="main-title">Chess Engine with AI</div>
+        <div class="body-text">A fully playable chess game built from scratch in Python, featuring a custom bitboard-based engine and an AI opponent powered by minimax search with alpha-beta pruning.</div>
+        <image class="project-header-image" src="../assets/images/chess-pygame/view.png">
+      </div>
+
+      <!-- PROJECT DETAILS -->
+      <div id="project-details">
+        <div class="subheader-text">Background</div>
+        <div class="project-details-content">
+          
+        <div class="body-text">
+          I came across this project idea online and decided to build it myself. It was important for me to implement the core chess logic from scratch to better understand how board games are structured programmatically. I am not a chess player, so the process was challenging at first. The overall goal was to fully implement the rules of chess and create a simple AI opponent that could beat me.
+        </div>
+
+        <div class="body-text">
+          The application is built using Python and Pygame, with a custom chess engine handling move generation and game state logic. Initially, I used a list-based representation of the board, but due to performance considerations, I later changed it to bitboard-based implementation. I learned that this approach is also used in more advanced chess engines such as Stockfish.
+        </div>
+
+        <div class="body-text">
+          A basic AI opponent was implemented using a minimax algorithm. To improve performance, alpha-beta pruning was added to reduce the number of evaluated positions. The AI evaluates positions using material values and simple piece-square tables. The search depth is limited to 4 plies, which is definetly enough to provide a challenging opponent for me.
+        </div>
+
+        <div class="body-text">
+          The game allows click-to-move interaction through a Pygame-based interface, where the player plays as white against the AI controlling black.
+        </div>
+
+        <div class="body-text">
+          <strong>Technologies:</strong> Python, Pygame
+        </div>
+
+          <div class="body-text">
+            <a href="https://github.com/Mika2808/chess-pygame" target="_blank">
+              View on GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- IMAGE GALLERY -->
+      <div id="project-gallery">
+        <div class="subheader-text">Image Gallery</div>
+        <div class="project-gallery-content">
+            
+          <div class="gallery-image-container half-width">
+            <img src="../assets/images/chess-pygame/showmoves.png" class="gallery-image">
+            <span class="image-caption">Highlighting legal moves</span>
+          </div>
+
+          <div class="gallery-image-container half-width">
+              <img src="../assets/images/chess-pygame/minmax.png" class="gallery-image">
+              <span class="image-caption">Minimax search algorithm</span>
+            </div>
+          
+          <div class="gallery-image-container half-width">
+            <img src="../assets/images/chess-pygame/heuristic.png" class="gallery-image">
+            <span class="image-caption">Position evaluation (heuristic scoring)</span>
+          </div>
+        
+            <div class="gallery-image-container half-width">
+            <img src="../assets/images/chess-pygame/mated.png" class="gallery-image">
+            <span class="image-caption">Checkmate by AI</span>
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div id="footer">
+
+      <a class="icon-link" target="_blank" href="https://www.instagram.com/mikolaj.kabalaaa">
+        <image src="../assets/icons/instagram.svg" class="footer-icon"/>
+      </a>
+
+      <a class="icon-link" target="_blank" href="https://www.facebook.com/share/14WxhyULjJt/?mibextid=wwXIfr">
+        <image src="../assets/icons/fb.svg" class="footer-icon"/>
+      </a>
+
+      <a class="icon-link" href="mailto:mikabala2003@gmail.com">
+        <image src="../assets/icons/mail.svg" class="footer-icon"/>
+      </a>
+    </div>
+
+	</body>
+</html>
